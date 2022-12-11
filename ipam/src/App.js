@@ -1,11 +1,16 @@
+import React from "react";
+import { Provider } from "react-redux";
+import {store} from './store';
 
+import {UfList} from "./components/UfList"
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      
-    </div>
+  <Provider store={store}>
+    <div>IPAM</div>
+  <UfList></UfList>
+  </Provider>
   );
 }
 
-export default App;
+
